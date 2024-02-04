@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c308f0ca1f.js" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        footer{
+            background: linear-gradient( black, #474b4f);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .foot{
+            display: flex;
+            justify-content: space-around;
+            
+            padding-top: 20px;
+        }
+        /* -----------------------------ABOUT---------------------------- */
+       
+        
+
+       
+
+        .footer-company-about{
+        line-height: 20px;
+        color:  #c6cdbd;
+        font-size: 15px;
+        font-family: 'Young Serif', serif;
+        font-weight: normal;
+        margin: 0;
+         
+    
+        width: 400px;
+            
+        padding: 10px;
+      
+        }
+
+        .footer-company-about span{
+            display: block;
+            color: #d6f3ae;
+            font: normal 36px 'Gabarito', cursive;;
+            
+            padding-bottom: 10px;
+        }
+
+        /* ------------------------------CONTACT------------------------ */
+        .footer-center{
+            border: white;
+        }
+        .footer-center h1{
+            color:  #d6f3ae;
+            font: normal 36px 'Gabarito', cursive;
+            padding-bottom: 10px;
+        }
+
+        .footer-center i{
+        
+            color: rgb(233, 48, 48);
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            margin: 10px 10px;
+            
+        }
+
+        
+
+        .footer-center p{
+        display: inline-block;
+        color: beige;
+        font-weight:400;
+        font-size: medium;
+        vertical-align: middle;
+        
+        }
+
+        .footer-center p span{
+        display:block;
+        font-weight: normal;
+        font-size:14px;
+        line-height:2;
+        }
+
+        .footer-center p a{
+        color: beige;
+        text-decoration: none;
+        }
+
+        
+        /* ---------------------EXPLORE-------------------------- */
+       
+
+        
+
+        .explore h1{
+        color:  #d6f3ae;
+        font: normal 36px 'Gabarito', cursive;;
+        
+        margin: 0;
+        }
+
+        .explore h1 span{
+        color:  lightseagreen;
+        }
+
+        /* Footer links */
+
+        .footer-links{
+        color: rgb(240, 240, 181);
+        margin: 10px 0 8px;
+        padding: 0;
+        font-weight: 400;
+        }
+
+        .footer-links a{
+        display:block;
+        line-height: 1.5;
+        font-weight:500;
+        text-decoration: none;
+        color:  inherit;
+        font-weight: 200;
+        font-size: 1.5rem;
+        }
+
+        .footer-links a:before {
+        content: "»";
+        font-weight:300;
+        font-size: 20px;
+        left: 0;
+        color: rgb(241, 230, 230);
+        display: inline-block;
+        padding-right: 5px;
+        }
+
+        .footer-company-name{
+        color:  #222;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        }
+
+        .footer-links a:hover{
+            text-decoration: underline white 4px;
+            
+        }
+
+        /* -----------------------socials----------------- */
+        .social{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            padding-inline-start: 150px;
+        }
+        
+        
+        .social a{
+            margin-right: 30px;
+           
+            height: 46px;
+            width: 46px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.453);
+            line-height: 48px;
+            text-align: center;
+        }
+
+        .social a i{
+            transition: all 0.3s linear;
+        }
+        
+        a:hover i{
+            transform: scale(1.4);
+        }
+        .social a:nth-child(1){
+            
+            background-color: #294a82;
+        }
+        .social a:nth-child(2){
+            background-color: #679af1;
+        }
+        .social a:nth-child(4){
+            background-color: #0A66C2;
+        }
+        .social a:nth-child(3){
+            background: linear-gradient(#feda75,#fa7e1e,#de2976,#962fbf,#4f5bd5);
+        }
+
+        .copyright{
+            text-align: center;
+            background-color: rgba(82, 82, 82, 0.633);
+            padding: 18px;
+            color: darkgray;
+            padding-inline-start: 150px;
+        }
+        .copyright span{
+            color: whitesmoke;
+        }
+
+        @media (max-width: 768px) {
+            .foot {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                }
+
+            .social{
+                align-items: center;
+                padding-inline-start: 0px;
+                padding-top: 30px;
+            }
+
+            .copyright{
+                padding-inline-start: 0px;
+                padding-top: 30px;
+            }
+            .foot .footer-company-about{
+                align-items: center;
+                width: auto;
+                padding-bottom: 20px;
+            }
+            .foot .footer-center{
+                width: auto;
+                padding-bottom: 20px;
+            }
+            .foot .explore{
+                width: auto;
+                padding-bottom: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div class="offer"><marquee>Get wireless at 50% off. offer ends in: <span id="time"></span></marquee></div>
+            <div class="hero">
+                <nav class="navbar">
+                    <h2 class="logo">BRO <span>CODE</span> </h2>
+                    <ul>
+                        <li><a href="home (2).html">Home</a></li>
+                        <li><a href="#">Category <i class="fa fa-chevron-circle-down fa-sm"></i></a>
+                            <div class="dropmenu">
+                                <ul>
+                                    <li><a href="wired.html" target="_blank">Wired</a></li>
+                                    <li><a href="wireless.html" target="_blank">Wireless</a></li>
+                                    <li><a href="speaker.html " target="_blank">Speakers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="allproducts.html" target="_blank">All products</a></li>
+                        <li><a href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping fa-lg"
+                                    style="color:rgb(153, 18, 18);"></i>Cart</a></li>
+
+                    </ul>
+                    <button type="button" class="navb">Login/Signup</button>
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <div class="signin">
+            <h1>LOGIN</h1>
+            <input type="email" placeholder="abc@gmail.com">
+            <input type="text" placeholder="Your name">
+            <input type="password" placeholder="8 letters max">
+            <button type="button" style="margin: 10px;">LOG IN</button>
+            <p style="margin: 10px; font-size: 1.2rem;">Don't have an account ??</p>
+            <a style="font-size: 1rem;" href="#login" type="button" class="logit">Sign in</a>
+            <span class="close">X</span>
+
+        </div>
+
+        <div class="login" id="login">
+            <h1>REGISTER</h1>
+            <input type="email" placeholder="abc@gmail.com">
+            <input type="text" placeholder="Your name">
+            <input type="password" placeholder="8 letters max">
+            <button type="button" style="margin: 10px;">REGISTER</button>
+            <p style="font-size: 1.3rem; margin: 10px;">Welcome to our Shopping website!!</p>
+            <span class="closed">X</span>
+        </div>
+
+
+
+
+
+        <section class="left-section">
+            <div class="text">
+                <h2>Unleash the power of <span>SOUND</span></h2>
+                <p>Experience music like never before!</p>
+                <button type="button" onclick="window.open('allproducts.html', '_blank')">Shop Now</button>
+            </div>
+
+        </section>
+
+        <main>
+            <section class="sec2">
+                <h1 style="font-size: 2.5rem;">Best <span>Sellers</span></h1>
+
+
+                <div class="wrap">
+                    <div class="scroll-image">
+                        <a href=""><img src="images/wireless.png" alt="bt">
+                        </a>
+                        <div class="description">
+                            <h2>Airdopes 100</h2>
+                            <p>₹899</p>
+                            <button type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="scroll-image">
+                        <a href=""><img src="images/speaker2.png" alt="bt">
+                        </a>
+                        <div class="description">
+                            <h2>BRO Bass </h2>
+                            <p>₹1999</p>
+                            <button type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="scroll-image">
+                        <a href=""><img src="images/wired1.png" alt="bt">
+                        </a>
+                        <div class="description">
+                            <h2>Airpods</h2>
+                            <p>₹1299</p>
+                            <button type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="scroll-image">
+                        <a href=""><img src="images/speaker1.png" alt="bt">
+                        </a>
+                        <div class="description">
+                            <h2>Speakers</h2>
+                            <p>₹1499</p>
+                            <button type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="scroll-image">
+                        <a href="">
+                            <img src="images/wired2.png" alt="bt">
+                        </a>
+                        <div class="description">
+                            <h2> Bass buzz</h2>
+                            <p>₹1799</p>
+                            <button type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="box-container">
+                    <div class="box" id="infobox">
+                        <img src="">
+                        <h3>WHY US???</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, doloribus aliquid. Earum
+                            iusto, veniam aperiam aliquid dolor labore illum, consequuntur cumque beatae ad
+                            necessitatibus expedita quae quis explicabo obcaecati consectetur?</p>
+
+                    </div>
+
+                    <div class="box">
+                        <img src="images/logo1.png">
+                        <h3>Features</h3>
+
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis impedit consectetur beatae
+                            velit nemo repellat, voluptatum dolorem veniam voluptate deleniti ducimus, sit harum laborum
+                            ea sunt tenetur nulla, quisquam eum.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/logo2.png">
+                        <h3>Features</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quasi, perferendis ullam
+                            aperiam fugiat impedit alias, hic veniam, cumque non recusandae ipsa incidunt excepturi
+                            repudiandae necessitatibus? Odit laborum ratione assumenda.</p>
+                    </div>
+                    <div class="box">
+
+                        <img src="images/logo3.png">
+                        <h3>Features</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo saepe quos
+                            voluptatem consequatur doloribus illum. Error vitae recusandae harum reiciendis nam id,
+                            voluptatibus eaque aliquid odio consectetur sit delectus.</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <div class="exoffer">
+            <div class=row1>
+                <img src="images/ex2.png">
+
+            </div>
+            <div class="row2">
+                <p>Exclusive offer : limited edition</p>
+                <h1>Bassheads 900</h1>
+                <p>
+                    40mm Drivers Super Extra Bass<br>
+                    Comfortable & Foldable
+                </p>
+                <button type="button" class="exb">Buy Now</button>
+
+            </div>
+        </div>
+
+
+
+
+        <footer >
+            <div class="foot">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    At Avengers Fitness Gym, we are more than just a gym; we are a community of fitness enthusiasts dedicated to helping you achieve your health and wellness goals. Our mission is to empower individuals to lead healthier, happier lives through exercise, nutrition, and a supportive community. Also we have our second branch in THANE which also provides similar motives towards our members.
+            
+                </p>
+            
+    
+    
+    
+                <div class="footer-center">
+                    <h1>Contact us</h1>
+    
+                    <div class="details">
+                        <i class="fa fa-map-marker"></i>
+                        <p>Joshi Lane,Tilak road Pantnagar,<br> Ghatkopar(east)</p>
+                    </div>
+              
+                    <div class="details">
+                        <i class="fa fa-phone"></i>
+                        <p>+91 7045362152</p>
+                    </div>
+              
+                    <div class="details">
+                        <i class="fa fa-envelope "></i>
+                        <p><a href="mailto:support@company.com">avengers@fitness.com</a></p>
+                   </div>
+              
+                </div>
+    
+    
+    
+                <div class="explore">
+                    <h1>Explore us</h1>
+    
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Home</a>
+                        
+                        <a href="#">Blog</a>
+                      
+                        <a href="#">Pricing</a>
+                      
+                        <a href="#">About</a>
+                        
+                        <a href="#">Contact</a>
+                    </p>
+    
+                </div>
+            </div>
+            
+        
+                
+            <div class="social">
+    
+                <a href="#"><i class="fa fa-facebook fa-xm " style="color: white;"></i></a>
+                <a href="#"><i class="fa fa-twitter  fa-xm" style="color: white;"></i></a>
+                <a href="#"><i class="fa fa-instagram fa-xm" style="color: white;"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-xm" style="color: white;"></i></a>
+                
+    
+            </div>
+    
+            <div class="copyright">
+                <p> Copyright © 2020.<span> All Rights Reserved.</span> </p>
+        
+            </div>
+            
+        </footer>
+    </div>
+
+</body>
+<script>
+    const signbutton = document.querySelector(".navb");
+    const signin = document.querySelector(".signin");
+    const close = document.querySelector(".close");
+    const logit = document.querySelector(".logit");
+    const login = document.querySelector(".login");
+    const closed = document.querySelector(".closed");
+
+
+    signbutton.addEventListener("click", () => {
+        signin.style.display = "flex"
+    })
+
+    close.addEventListener("click", () => {
+        signin.style.display = "none"
+
+    })
+
+    logit.addEventListener("click", () => {
+        signin.style.display = "none"
+        login.style.display = "flex"
+    })
+    closed.addEventListener("click", () => {
+
+        login.style.display = "none"
+    });
+
+
+    let target;
+    let current;
+    let diff;
+    let days;
+    let hours;
+    let mins;
+    let sec;
+    setInterval(() => {
+
+
+        target = new Date("oct 6, 2023 10:00:00").getTime();
+        // console.log(target);
+        current = new Date().getTime();
+        // console.log(current);
+        diff = target - current;
+        // console.log(diff);
+        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        // console.log(days);
+        hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        // console.log(hours);
+        mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        // console.log(mins);
+        sec = Math.floor((diff % (1000 * 60)) / (1000));
+        // console.log(sec);
+        document.getElementById('time').innerHTML = days + "d: " + hours + "hrs:" + mins + "m:" + sec + "s";
+    }, 1000);
+
+
+
+
+
+
+
+</script>
+
+</html>

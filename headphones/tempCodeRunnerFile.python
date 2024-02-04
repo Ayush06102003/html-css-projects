@@ -1,0 +1,16 @@
+PT=input("Enter the plain text: ")
+key1=int(input("Enter the key: "))
+key2=int(input("Enter the key: "))
+text="abcdefghijklmnopqrstuvwxyz"
+def affeine(PT,key):
+    encrypt=" "
+    for i in PT:
+        if i == " ":
+            continue
+    text_integer=text.index(i)
+    ct=text[((text_integer*key1)+key2)]%26
+    encrypt += ct
+    print(encrypt)
+
+
+
